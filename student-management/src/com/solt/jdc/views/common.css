@@ -1,0 +1,83 @@
+.root {
+	p: #051937;
+	s: #A8EB12;
+	a: #00C9B7;
+}
+
+.frame {
+	-fx-pref-width: 1080px;
+	-fx-pref-height: 700px;
+}
+
+.menu-bar {
+	-fx-pref-height: 60px;
+}
+
+.menu-btn {
+	-fx-pref-width: 70px;
+	-fx-padding: 5px;
+	-fx-spacing: 5px;
+	-fx-alignment: center;
+}
+
+.menu-btn:hover {
+	-fx-cursor: hand;
+}
+
+.svg-wrap {
+	-fx-alignment: center;
+	-fx-pref-height: 25px;
+}
+
+.view-frame {
+	-fx-pref-width: 1080px;
+	-fx-pref-height: 640px;
+}
+
+.search-bar {
+	-fx-pref-height: 60px;
+	-fx-padding: 10px;
+	-fx-spacing: 10px;
+	-fx-alignment: center-left;
+}
+
+.text-field {
+	-fx-pref-width: 150px;
+}
+
+.button {
+	-fx-pref-width: 70px;
+}
+
+.button:hover {
+	-fx-cursor: hand;
+}
+
+.tile-pane {
+	-fx-padding: 10px;
+	-fx-hgap: 10px;
+	-fx-vgap: 10px;
+}
+
+.class-box {
+	-fx-pref-width: 165px;
+	-fx-pref-height: 100px;
+	-fx-background-color: p;
+	-fx-alignment: center;
+	-fx-spacing: 5px;
+	-fx-border-radius: 10px;
+	-fx-background-radius: 10px;
+}
+
+.class-box > .year, .class-box > .grade {
+	-fx-font-family: "Cascadia Code";
+	-fx-text-fill: white;
+}
+
+.class-box > .year {
+	-fx-font-size: 20px;
+}
+
+.class-box > .grade {
+	-fx-font-size: 15px;
+}

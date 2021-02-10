@@ -13,6 +13,8 @@ public class Student {
 	private Gender gender;
 	private LocalDate dob;
 	private String phone;
+	
+	private Classroom classroom;
 
 	public enum Gender { Male, Female }
 }

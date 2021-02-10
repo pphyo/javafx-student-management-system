@@ -11,4 +11,5 @@ public class Result {
 	private int totalMarks;
 	private double avg;
 	
+	private Student student;
 }

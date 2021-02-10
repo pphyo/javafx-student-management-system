@@ -11,4 +11,7 @@ public class ExamData {
 	private int id;
 	private LocalDate examDate;
 	
+	private Student student;
+	private Exam exam;
+	
 }
