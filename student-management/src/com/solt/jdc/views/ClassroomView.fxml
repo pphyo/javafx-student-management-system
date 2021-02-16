@@ -9,20 +9,314 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="view-frame" stylesheets="@common.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="view-frame" stylesheets="@common.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solt.jdc.views.ClassroomView">
    <children>
       <HBox styleClass="search-bar">
          <children>
-            <TextField prefHeight="25.0" prefWidth="42.0" promptText="Search by grade" />
-            <TextField prefHeight="25.0" prefWidth="42.0" promptText="Search by year" />
-            <Button mnemonicParsing="false" text="Add" />
-            <Button mnemonicParsing="false" text="Search" />
+            <TextField fx:id="txtGrade" prefHeight="25.0" prefWidth="42.0" promptText="Search by grade" />
+            <TextField fx:id="txtYear" prefHeight="25.0" prefWidth="42.0" promptText="Search by year" />
+            <Button mnemonicParsing="false" onAction="#add" text="Add" />
+            <Button mnemonicParsing="false" onAction="#search" text="Search" />
          </children>
       </HBox>
       <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
         <content>
-            <TilePane prefHeight="0.0" prefWidth="1078.0">
+            <TilePane fx:id="roomBox" prefHeight="0.0" prefWidth="1078.0">
                <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
+                     <children>
+                        <Label styleClass="grade" text="Grade - 1" />
+                        <Label styleClass="year" text="2019" />
+                     </children>
+                  </VBox>
                   <VBox prefHeight="200.0" prefWidth="100.0" styleClass="class-box">
                      <children>
                         <Label styleClass="grade" text="Grade - 1" />

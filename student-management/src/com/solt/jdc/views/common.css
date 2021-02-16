@@ -41,24 +41,6 @@
 	-fx-alignment: center-left;
 }
 
-.text-field {
-	-fx-pref-width: 150px;
-}
-
-.button {
-	-fx-pref-width: 70px;
-}
-
-.button:hover {
-	-fx-cursor: hand;
-}
-
-.tile-pane {
-	-fx-padding: 10px;
-	-fx-hgap: 10px;
-	-fx-vgap: 10px;
-}
-
 .class-box {
 	-fx-pref-width: 165px;
 	-fx-pref-height: 100px;
@@ -70,7 +52,7 @@
 }
 
 .class-box > .year, .class-box > .grade {
-	-fx-font-family: "Cascadia Code";
+	-fx-font-family: "JetBrans Mono";
 	-fx-text-fill: white;
 }
 
@@ -80,4 +62,71 @@
 
 .class-box > .grade {
 	-fx-font-size: 15px;
+}
+
+.add-btn {
+	-fx-alignment: center;
+	-fx-spacing: 5px;
+	-fx-pref-width: 40px;
+}
+
+.add-btn > SVGPath {
+	-fx-fill: p;
+}
+
+.add-btn:hover > SVGPath {
+	-fx-fill: grey;
+	-fx-cursor: hand;
+}
+
+.text-field {
+	-fx-pref-width: 150px;
+}
+
+.combo-box {
+	-fx-pref-width: 120px;
+}
+
+.pad10-rbl {
+	-fx-padding: 0 10 10 10;
+}
+
+.pad10 {
+	-fx-padding: 10px;
+}
+
+.spa10 {
+	-fx-spacing: 10px;
+}
+
+.button {
+	-fx-pref-width: 70px;
+}
+
+.button:hover {
+	-fx-cursor: hand;
+}
+
+TilePane {
+	-fx-padding: 10px;
+	-fx-hgap: 10px;
+	-fx-vgap: 10px;
+}
+
+.cls-edit-view {
+	-fx-pref-width: 400px;
+	-fx-pref-height: 200px;
+}
+
+.title-wrap {
+	-fx-pref-height: 80px;
+	-fx-padding: 10px;
+	-fx-alignment: center;
+	-fx-background-color: s;
+}
+
+.title-wrap > Label {
+	-fx-font-size: 25px;
+	-fx-font-weight: bold;
+	-fx-text-fill: p;
 }
