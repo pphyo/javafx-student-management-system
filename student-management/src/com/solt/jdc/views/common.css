@@ -122,11 +122,11 @@ TilePane {
 	-fx-pref-height: 80px;
 	-fx-padding: 10px;
 	-fx-alignment: center;
-	-fx-background-color: s;
+	-fx-background-color: grey;
 }
 
 .title-wrap > Label {
 	-fx-font-size: 25px;
 	-fx-font-weight: bold;
-	-fx-text-fill: p;
+	-fx-text-fill: s;
 }

@@ -13,7 +13,7 @@
    <children>
       <HBox styleClass="title-wrap">
          <children>
-            <Label fx:id="lblTitle" text="Add Classroom" />
+            <Label text="Add Classroom" />
          </children>
       </HBox>
       <GridPane hgap="10.0" styleClass="pad10" vgap="5.0">
