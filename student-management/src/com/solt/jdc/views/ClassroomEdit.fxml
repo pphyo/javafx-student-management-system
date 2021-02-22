@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -29,20 +30,15 @@
          <children>
             <HBox alignment="BOTTOM_LEFT">
                <children>
-                  <Label text="Grade:" />
-               </children>
-            </HBox>
-            <HBox GridPane.rowIndex="1">
-               <children>
-                  <TextField fx:id="txtGrade" promptText="Enter Grade" />
+                  <Label text="Year:" />
                </children>
             </HBox>
             <HBox alignment="BOTTOM_LEFT" GridPane.columnIndex="1">
                <children>
-                  <Label text="Year:" />
+                  <Label text="Grade:" />
                </children>
             </HBox>
-            <HBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <HBox GridPane.rowIndex="1">
                <children>
                   <TextField fx:id="txtYear" promptText="Enter Year" />
                </children>
@@ -51,6 +47,11 @@
                <children>
                   <Button mnemonicParsing="false" onAction="#save" text="Save" />
                   <Button mnemonicParsing="false" onAction="#close" text="Close" />
+               </children>
+            </HBox>
+            <HBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ComboBox fx:id="cbxGrade" prefWidth="150.0" />
                </children>
             </HBox>
          </children>

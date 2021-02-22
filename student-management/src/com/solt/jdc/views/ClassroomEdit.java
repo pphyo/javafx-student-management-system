@@ -5,6 +5,7 @@ import static com.solt.jdc.util.CommonUtil.isEmpty;
 import java.util.function.Consumer;
 
 import com.solt.jdc.entity.Classroom;
+import com.solt.jdc.entity.Classroom.Grade;
 import com.solt.jdc.util.MessageBox;
 import com.solt.jdc.util.StudentException;
 
@@ -12,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -20,11 +22,15 @@ import javafx.stage.StageStyle;
 public class ClassroomEdit {
 	
 	@FXML
-	private TextField txtGrade;
+	private ComboBox<Grade> cbxGrade;
 	@FXML
 	private TextField txtYear;
 	
 	private Consumer<Classroom> handler;
+	
+	public void initialize() {
+		cbxGrade.getItems().addAll(Grade.values());
+	}
 	
 	public static void show(Consumer<Classroom> handler) {
 		try {
@@ -47,7 +53,7 @@ public class ClassroomEdit {
 	public void save() {
 		try {
 			
-			if(isEmpty(txtGrade.getText())) {
+			if(null == cbxGrade.getValue()) {
 				throw new StudentException("Grade can't be null!");
 			}
 			
@@ -56,7 +62,7 @@ public class ClassroomEdit {
 			}
 			
 			Classroom room = new Classroom();
-			room.setGrade(txtGrade.getText());
+			room.setGrade(cbxGrade.getValue());
 			room.setYear(Integer.parseInt(txtYear.getText()));
 			
 			handler.accept(room);
@@ -71,7 +77,7 @@ public class ClassroomEdit {
 	}
 	
 	public void close() {
-		txtGrade.getScene().getWindow().hide();
+		cbxGrade.getScene().getWindow().hide();
 	}
 
 }

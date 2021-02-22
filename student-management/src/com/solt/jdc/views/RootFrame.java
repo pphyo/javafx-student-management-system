@@ -11,6 +11,10 @@ public class RootFrame {
     @FXML
     private StackPane viewHolder;
 
+    public void initialize() {
+    	showClassroom(null);
+    }
+    
     @FXML
     void showClassroom(MouseEvent event) {
     	showView("ClassroomView");

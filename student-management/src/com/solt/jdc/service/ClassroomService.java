@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.solt.jdc.entity.Classroom;
+import com.solt.jdc.entity.Classroom.Grade;
 
 public class ClassroomService {
 
@@ -26,13 +27,13 @@ public class ClassroomService {
 	
 	public void save(Classroom room) {
 		
-		String sql = "insert into classroom (grade, year) values (?, ?)";
+		String sql = "insert into classroom (year, grade) values (?, ?)";
 		
 		try(Connection conn = getSqlConnection();
 				PreparedStatement stmt = conn.prepareStatement(sql)) {
 			
-			stmt.setString(1, room.getGrade());
-			stmt.setInt(2, room.getYear());
+			stmt.setInt(1, room.getYear());
+			stmt.setString(2, room.getGrade().toString());
 			
 			stmt.executeUpdate();
 			
@@ -53,7 +54,7 @@ public class ClassroomService {
 			
 			while(rs.next()) {
 				Classroom room = new Classroom();
-				room.setGrade(rs.getString("grade"));
+				room.setGrade(Grade.valueOf(rs.getString("grade")));
 				room.setYear(rs.getInt("year"));
 				
 				result.add(room);
