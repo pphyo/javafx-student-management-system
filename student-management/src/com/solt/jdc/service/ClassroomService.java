@@ -115,6 +115,30 @@ public class ClassroomService {
 		
 	}
 	
+	public List<Grade> getAllGradeByYear(int year) {
+		
+		String sql = "select grade from classroom where year = ?";
+		
+		List<Grade> result = new ArrayList<>();
+		
+		try(Connection conn = getSqlConnection();
+				PreparedStatement stmt = conn.prepareStatement(sql)) {
+			
+			stmt.setInt(1, year);
+			
+			ResultSet rs = stmt.executeQuery();
+			
+			while(rs.next())
+				result.add(Grade.valueOf(rs.getString(1)));
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return result;
+		
+	}
+	
 	public List<Classroom> getAll() {
 		
 		List<Classroom> result = new ArrayList<>();

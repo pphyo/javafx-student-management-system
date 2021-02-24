@@ -7,6 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="view-frame" stylesheets="@common.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solt.jdc.views.StudentView">
    <children>
@@ -27,13 +28,41 @@
          <children>
             <TableView fx:id="tblStudent" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
               <columns>
-                <TableColumn maxWidth="1000.0" minWidth="30.0" prefWidth="100.0" text="Grade" />
-                  <TableColumn maxWidth="1000.0" minWidth="30.0" prefWidth="100.0" text="Year" />
-                  <TableColumn maxWidth="3000.0" minWidth="50.0" prefWidth="140.0" text="ID" />
-                <TableColumn minWidth="50.0" prefWidth="200.0" text="Name" />
-                  <TableColumn maxWidth="2000.0" minWidth="50.0" prefWidth="120.0" text="Gender" />
-                  <TableColumn maxWidth="2000.0" minWidth="50.0" prefWidth="130.0" text="Birth Date" />
-                  <TableColumn prefWidth="75.0" text="Phone" />
+                <TableColumn maxWidth="1000.0" minWidth="30.0" prefWidth="100.0" text="Grade">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="" />
+                	</cellValueFactory>
+                </TableColumn>
+                  <TableColumn maxWidth="1000.0" minWidth="30.0" prefWidth="100.0" text="Year">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="" />
+                	</cellValueFactory>
+                </TableColumn>
+                  <TableColumn maxWidth="3000.0" minWidth="50.0" prefWidth="140.0" text="ID">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="stuId" />
+                	</cellValueFactory>
+                </TableColumn>
+                <TableColumn minWidth="50.0" prefWidth="200.0" text="Name">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="name" />
+                	</cellValueFactory>
+                </TableColumn>
+                  <TableColumn maxWidth="2000.0" minWidth="50.0" prefWidth="120.0" text="Gender">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="gender" />
+                	</cellValueFactory>
+                </TableColumn>
+                  <TableColumn maxWidth="2000.0" minWidth="50.0" prefWidth="130.0" text="Birth Date">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="dob" />
+                	</cellValueFactory>
+                </TableColumn>
+                  <TableColumn prefWidth="75.0" text="Phone">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="phone" />
+                	</cellValueFactory>
+                </TableColumn>
               </columns>
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

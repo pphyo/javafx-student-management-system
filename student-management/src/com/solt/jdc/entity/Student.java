@@ -2,6 +2,8 @@ package com.solt.jdc.entity;
 
 import java.time.LocalDate;
 
+import com.solt.jdc.util.StudentUtil;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,6 +17,10 @@ public class Student {
 	private String phone;
 	
 	private Classroom classroom;
+	
+	public String getStuId() {
+		return StudentUtil.convertStuId(getId());
+	}
 
 	public enum Gender { Male, Female }
 }
