@@ -118,6 +118,11 @@ TilePane {
 	-fx-pref-height: 200px;
 }
 
+.stu-eidt-view {
+	-fx-pref-width: 300px;	
+	-fx-pref-height: 400px;
+}
+
 .title-wrap {
 	-fx-pref-height: 80px;
 	-fx-padding: 10px;

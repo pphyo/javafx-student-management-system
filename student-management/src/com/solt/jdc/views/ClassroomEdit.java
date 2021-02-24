@@ -15,6 +15,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -25,11 +27,22 @@ public class ClassroomEdit {
 	private ComboBox<Grade> cbxGrade;
 	@FXML
 	private TextField txtYear;
+	@FXML
+	private GridPane grid;
 	
 	private Consumer<Classroom> handler;
 	
 	public void initialize() {
 		cbxGrade.getItems().addAll(Grade.values());
+		
+		grid.setOnKeyPressed(e -> {
+			if(e.getCode() == KeyCode.ENTER)
+				save();
+			
+			if(e.getCode() == KeyCode.ESCAPE)
+				close();
+		});
+		
 	}
 	
 	public static void show(Consumer<Classroom> handler) {

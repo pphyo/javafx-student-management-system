@@ -8,26 +8,27 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="view-frame" stylesheets="@common.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solt.jdc.views.StudentView">
    <children>
       <HBox styleClass="search-bar">
          <children>
-            <ComboBox prefWidth="150.0" promptText="Classroom" />
-            <TextField promptText="Search by ID" />
-            <TextField promptText="Search by name" />
-            <ComboBox prefWidth="150.0" promptText="Gender" />
-            <Button mnemonicParsing="false" text="Upload" />
-            <Button mnemonicParsing="false" text="Add" />
-            <Button mnemonicParsing="false" text="Search" />
-            <Button mnemonicParsing="false" text="Reload" />
+            <ComboBox fx:id="cbxYear" prefWidth="150.0" promptText="Select Year" />
+            <ComboBox fx:id="cbxGrade" prefWidth="150.0" promptText="Select grade" />
+            <TextField fx:id="txtId" promptText="Search by ID" />
+            <TextField fx:id="txtName" promptText="Search by name" />
+            <ComboBox fx:id="cbxGender" prefWidth="150.0" promptText="Gender" />
+            <Button mnemonicParsing="false" onAction="#upload" text="Upload" />
+            <Button mnemonicParsing="false" onAction="#add" text="Add" />
+            <Button mnemonicParsing="false" onAction="#search" text="Search" />
+            <Button mnemonicParsing="false" onAction="#reload" text="Reload" />
          </children>
       </HBox>
       <VBox styleClass="pad10-rbl" VBox.vgrow="ALWAYS">
          <children>
-            <TableView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <TableView fx:id="tblStudent" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
               <columns>
-                <TableColumn maxWidth="2000.0" minWidth="30.0" prefWidth="100.0" text="Classroom" />
+                <TableColumn maxWidth="1000.0" minWidth="30.0" prefWidth="100.0" text="Grade" />
+                  <TableColumn maxWidth="1000.0" minWidth="30.0" prefWidth="100.0" text="Year" />
                   <TableColumn maxWidth="3000.0" minWidth="50.0" prefWidth="140.0" text="ID" />
                 <TableColumn minWidth="50.0" prefWidth="200.0" text="Name" />
                   <TableColumn maxWidth="2000.0" minWidth="50.0" prefWidth="120.0" text="Gender" />

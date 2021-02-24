@@ -17,7 +17,7 @@
             <Label text="Add Classroom" />
          </children>
       </HBox>
-      <GridPane hgap="10.0" styleClass="pad10" vgap="5.0">
+      <GridPane fx:id="grid" hgap="10.0" styleClass="pad10" vgap="5.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -43,15 +43,15 @@
                   <TextField fx:id="txtYear" promptText="Enter Year" />
                </children>
             </HBox>
+            <HBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ComboBox fx:id="cbxGrade" prefWidth="150.0" />
+               </children>
+            </HBox>
             <HBox styleClass="spa10" GridPane.rowIndex="2">
                <children>
                   <Button mnemonicParsing="false" onAction="#save" text="Save" />
                   <Button mnemonicParsing="false" onAction="#close" text="Close" />
-               </children>
-            </HBox>
-            <HBox GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <children>
-                  <ComboBox fx:id="cbxGrade" prefWidth="150.0" />
                </children>
             </HBox>
          </children>
