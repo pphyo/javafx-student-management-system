@@ -28,17 +28,17 @@
          <children>
             <TableView fx:id="tblStudent" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
               <columns>
+                <TableColumn maxWidth="1000.0" minWidth="30.0" prefWidth="100.0" text="Year">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="classroomYear" />
+                	</cellValueFactory>
+                </TableColumn>
                 <TableColumn maxWidth="1000.0" minWidth="30.0" prefWidth="100.0" text="Grade">
                 	<cellValueFactory>
-                		<PropertyValueFactory property="" />
+                		<PropertyValueFactory property="classroomGrade" />
                 	</cellValueFactory>
                 </TableColumn>
-                  <TableColumn maxWidth="1000.0" minWidth="30.0" prefWidth="100.0" text="Year">
-                	<cellValueFactory>
-                		<PropertyValueFactory property="" />
-                	</cellValueFactory>
-                </TableColumn>
-                  <TableColumn maxWidth="3000.0" minWidth="50.0" prefWidth="140.0" text="ID">
+                <TableColumn maxWidth="3000.0" minWidth="50.0" prefWidth="140.0" text="ID">
                 	<cellValueFactory>
                 		<PropertyValueFactory property="stuId" />
                 	</cellValueFactory>
@@ -48,17 +48,17 @@
                 		<PropertyValueFactory property="name" />
                 	</cellValueFactory>
                 </TableColumn>
-                  <TableColumn maxWidth="2000.0" minWidth="50.0" prefWidth="120.0" text="Gender">
+                <TableColumn maxWidth="2000.0" minWidth="50.0" prefWidth="120.0" text="Gender">
                 	<cellValueFactory>
                 		<PropertyValueFactory property="gender" />
                 	</cellValueFactory>
                 </TableColumn>
-                  <TableColumn maxWidth="2000.0" minWidth="50.0" prefWidth="130.0" text="Birth Date">
+                <TableColumn maxWidth="2000.0" minWidth="50.0" prefWidth="130.0" text="Birth Date">
                 	<cellValueFactory>
                 		<PropertyValueFactory property="dob" />
                 	</cellValueFactory>
                 </TableColumn>
-                  <TableColumn prefWidth="75.0" text="Phone">
+                <TableColumn prefWidth="75.0" text="Phone">
                 	<cellValueFactory>
                 		<PropertyValueFactory property="phone" />
                 	</cellValueFactory>

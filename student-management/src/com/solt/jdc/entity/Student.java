@@ -21,6 +21,14 @@ public class Student {
 	public String getStuId() {
 		return StudentUtil.convertStuId(getId());
 	}
+	
+	public int getClassroomYear() {
+		return classroom.getYear();
+	}
+	
+	public String getClassroomGrade() {
+		return classroom.getGrade().toString();
+	}
 
 	public enum Gender { Male, Female }
 }
