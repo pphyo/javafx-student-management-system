@@ -79,7 +79,7 @@
 	-fx-cursor: hand;
 }
 
-.text-field {
+.text-field, .text-area {
 	-fx-pref-width: 150px;
 }
 
@@ -127,11 +127,36 @@ TilePane {
 	-fx-pref-height: 400px;
 }
 
+.sub-edit-view {
+	-fx-pref-width: 300px;
+	-fx-pref-height: 270px;
+}
+
+.sub-inn {
+	-fx-pref-width: 120px;
+}
+
+.sub-box {
+	-fx-pref-width: 245px;
+	-fx-pref-height: 100px;
+	-fx-background-color: grey;
+	-fx-background-radius:5px;
+	-fx-border-radius: 5px;
+	-fx-alignment: center;
+}
+
+.sub-box > .label {
+	-fx-font-family: "JetBrains Mono";
+	-fx-text-fill: white;
+	-fx-font-size: 17px;
+	-fx-font-weight: bold;
+}
+
 .title-wrap {
 	-fx-pref-height: 80px;
 	-fx-padding: 10px;
 	-fx-alignment: center;
-	-fx-background-color: grey;
+	-fx-background-color: grey
 }
 
 .title-wrap > Label {
