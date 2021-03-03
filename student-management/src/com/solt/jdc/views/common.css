@@ -164,3 +164,8 @@ TilePane {
 	-fx-font-weight: bold;
 	-fx-text-fill: s;
 }
+
+.login-view {
+	-fx-pref-width: 400px;
+	-fx-pref-height: 250px;
+}
